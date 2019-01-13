@@ -1,0 +1,150 @@
+	a {text-decoration:none; color:#cccccc}
+	a:hover{color:white}
+
+/* Fixe un élément sur l'écran */
+	.fixe {
+		position:fixed;
+	}
+/* Fixe fond d'écran */
+	.fond {
+		background-size:cover;
+		background:no-repeat fixed;
+		max-width:100%;
+		height:auto;
+	}
+
+	.cagette{
+		background:url('cagette.png') center no-repeat;
+		background-size:contain;
+	}
+
+	.transp, .transp:focus, .transp:hover, .transp:active {
+		bacgkground-color: rgba (255,255,255,0);
+		border-color: transparent;
+		border : 0px;
+	}
+	/* .m { */
+		/* margin: -2% -3%; */
+	/* } */
+
+/* Boutons qui changent d'apparence quand les slides glissent */
+	.carousel-indicators {
+		background-color: transparent;
+		border-radius:20px;
+		border-color:transparent;
+		color:white;
+
+	}
+
+	.btn-outline-light {
+		border-radius:20px;
+		background-color: transparent;
+		background-image: none;
+		border-color: transparent;
+	}
+
+	.carousel-indicators .active {
+		background-color: white;
+		border-radius:20px;
+		border-color:transparent;
+		color:black;
+	}
+
+	.active .btn-outline-light {
+		color: black;
+		background-color: transparent;
+		background-image: none;
+		border-color: transparent;
+	}
+
+/* Réduire taille texte poour petit écran	 */
+	@media (max-width:480px){
+	.resize {
+		font-size: 14px;
+	}}
+
+
+/* Adapter zone de clic bouton prev/next	 */
+	@media (max-width:580px){
+	.carousel-control-next, .carousel-control-prev {
+		bottom:20%;
+	}}
+
+	@media (min-width:580px) and (max-width:990px){
+	.carousel-control-next, .carousel-control-prev {
+		bottom:15%;
+	}}
+
+	@media (min-width:990px){
+	.carousel-control-next, .carousel-control-prev {
+		bottom:10%;
+	}}
+
+/* Adapter la dimension de l'image carrée du légume à la largeur de l'écran */
+.tooltip-inner {
+  max-width: 200px;
+  padding: 0.25rem 0.5rem;
+  color: white;
+  text-align: center;
+  background-color: black;
+  border-radius: 0.25rem;
+  border: 5px double white;
+  text-align:left;
+  text-transform: capitalize;
+}
+
+.arrow::before, .arrow {
+	border-top-color: white !important;
+	border-bottom-color: white !important;
+}
+
+/* Adapter la dimension de l'image carrée du légume à la largeur de l'écran */
+	@media (max-width:480px){
+	.img-legume {
+		width:200px;
+	}}
+
+	@media (min-width:480px) and (max-width:600px){
+	.img-legume {
+		width:140px;
+	}}
+
+	@media (min-width:600px) and (max-width:800px){
+	.img-legume {
+		width:160px;
+	}}
+
+	@media (min-width:800px) and (max-width:1000px){
+	.img-legume {
+		width:160px;
+	}}
+
+	@media (min-width:1000px) and (max-width:1200px){
+	.img-legume {
+		width:180px;
+	}}
+
+	@media (min-width:1200px) and (max-width:1400px){
+	.img-legume {
+		width:200px;
+	}}
+	@media (min-width:1400px) and (max-width:1600px){
+	.img-legume {
+		width:220px;
+	}}
+	@media (min-width:1600px){
+	.img-legume {
+		width:220px;
+	}}
+
+/* Mise en forme des indicateurs de slide */
+	.carousel-mois{
+		width:100%;
+		position:sticky;
+		bottom:0;
+		background-color:black;
+	}
+/* Le diaporama ne se lance pas automatiquement */
+	$('.carousel').carousel({
+		interval: false
+	})

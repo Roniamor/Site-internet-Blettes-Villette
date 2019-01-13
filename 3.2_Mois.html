@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Blette Villette CSS -->
+  <link rel="stylesheet" type="text/css" href="0.1_Ressources\0.0_Charte Graphique\Charte Graphique.css">
+
+  <!-- Mois CSS -->
+  <link rel="stylesheet" type="text/css" href="0.1_Ressources\0.0_Charte Graphique\Mois.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="0.1_Ressources\0.0_Charte Graphique\Mois.js"></script>
+
+  <!-- Titre Page Web -->
+  <title>Légumes</title>
+</head>
+
+
+<body class="bg-dark">
+
+  <!--NAVBAR-->
+  <nav class="BV_Vert navbar navbar-expand-lg navbar-dark" style="font-size: 15pt">
+
+    <!--Logo clicable-->
+    <a class="navbar-brand" href="1.0_Accueil.html">
+      <img src="0.1_Ressources\0.0_Charte Graphique\Logo_BV_rect_trsp_long.png" width="80" height="40" class="d-inline-block align-top" alt="logo">
+    </a>
+
+    <!--Boutton Menu Responsive-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <!--Blettes Villettes-->
+        <li class="font-weight-bold nav-item active"><a class="nav-link txt_BV" style="font-family:Calibri ; font-size: 17pt" href="1.0_Accueil.html">Blettes Villette</a></li>
+
+        <!--Accueil-->
+        <li class="nav-item"><a class="nav-link" href="1.0_Accueil.html">Accueil</a></li>
+
+        <!--La Ferme-->
+        <li class="nav-item"><a class="nav-link" href="2.0_La Ferme.html">La ferme</a></li>
+
+        <!--Menu Légumes-->
+        <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="3.0_Légumes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Légumes</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="3.0_Légumes.html">Fiches légumes</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="3.1_Paniers.html">Panier de saison</a>
+            <a class="dropdown-item font-weight-bold" href="3.2_Mois.html">Légumes du mois</a>
+          </div>
+        </li>
+
+        <!--Recettes-->
+        <li class="nav-item"><a class="nav-link" href="4.0_Recettes.html">Recettes</a></li>
+
+        <!--Menu Infos-->
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="5.0_Inscription.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Informations</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="5.0_Inscription.html">Inscription</a>
+            <a class="dropdown-item" href="5.1_Contacts.html">Contacts</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/NAVBAR-->
+
+  <div style="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="false">
+      <!-- Background-color, w3school > color pidcker > lighter/darker:10% > Hue de 30 en 30 -->
+      <div class="carousel-inner" style="background:cover">
+        <!-- Janvier 240-->
+        <div class="carousel-item active" style="background-color:#000033">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume butternut" > </div>
+            <div class="legume carotte" > </div>
+            <!-- <div class="legume chou-vert" > </div>  -->
+            <div class="legume epinard" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume mache" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume pomme" > </div>
+            <div class="legume potimarron" > </div>
+            <div class="legume radis-noir" > </div>
+          </div>
+        </div>
+        <!-- Février 210-->
+        <div class="carousel-item" style="background-color:#001a33">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume butternut" > </div>
+            <div class="legume carotte" > </div>
+            <!-- <div class="legume chou-vert" > </div>  -->
+            <div class="legume epinard" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume mache" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume pomme" > </div>
+            <div class="legume radis-noir" > </div>
+          </div>
+        </div>
+        <!-- Mars 180-->
+        <div class="carousel-item" style="background-color:#003333">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume blette" > </div>
+            <div class="legume butternut" > </div>
+            <div class="legume carotte" > </div>
+            <!-- <div class="legume chou-vert" > </div>  -->
+            <div class="legume epinard" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume pomme" > </div>
+            <div class="legume radis-noir" > </div>
+          </div>
+        </div>
+        <!-- Avril 150-->
+        <div class="carousel-item" style="background-color:#00331a">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume blette" > </div>
+            <div class="legume epinard" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume persil" > </div>
+            <div class="legume pomme" > </div>
+            <div class="legume radis-noir" > </div>
+          </div>
+        </div>
+        <!-- Mai 120-->
+        <div class="carousel-item" style="background-color:#003300">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume aubergine" > </div>
+            <div class="legume basilic" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume epinard" > </div>
+            <div class="legume fraise" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume persil" > </div>
+          </div>
+        </div>
+        <!-- Juin 90-->
+        <div class="carousel-item" style="background-color:#1a3300">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume abricot" > </div>
+            <div class="legume aubergine" > </div>
+            <div class="legume basilic" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume concombre" > </div>
+            <div class="legume epinard" > </div>
+            <div class="legume fenouil" > </div>
+            <div class="legume fraise" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume peche" > </div>
+            <div class="legume persil" > </div>
+            <div class="legume poivron" > </div>
+            <div class="legume tomate" > </div>
+          </div>
+        </div>
+        <!-- Juillet 60-->
+        <div class="carousel-item" style="background-color:#333300">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume abricot" > </div>
+            <div class="legume aubergine" > </div>
+            <div class="legume basilic" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume concombre" > </div>
+            <div class="legume fenouil" > </div>
+            <div class="legume fraise" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume peche" > </div>
+            <div class="legume persil" > </div>
+            <div class="legume piment-doux" > </div>
+            <div class="legume poivron" > </div>
+            <div class="legume tomate" > </div>
+          </div>
+        </div>
+        <!-- Août 30-->
+        <div class="carousel-item" style="background-color:#331a00">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume abricot" > </div>
+            <div class="legume aubergine" > </div>
+            <div class="legume basilic" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume concombre" > </div>
+            <div class="legume fenouil" > </div>
+            <div class="legume fraise" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume peche" > </div>
+            <div class="legume persil" > </div>
+            <div class="legume piment-doux" > </div>
+            <div class="legume poivron" > </div>
+            <div class="legume tomate" > </div>
+          </div>
+        </div>
+        <!-- Septembre 0/360-->
+        <div class="carousel-item" style="background-color:#330000">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume aubergine" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume carotte" > </div>
+            <div class="legume concombre" > </div>
+            <div class="legume fenouil" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume peche" > </div>
+            <div class="legume persil" > </div>
+            <div class="legume piment-doux" > </div>
+            <div class="legume poivron" > </div>
+            <div class="legume tomate" > </div>
+          </div>
+        </div>
+        <!-- Octobre 330-->
+        <div class="carousel-item" style="background-color:#33001a">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume aubergine" > </div>
+            <div class="legume basilic" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume butternut" > </div>
+            <div class="legume carotte" > </div>
+            <div class="legume concombre" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume patisson" > </div>
+            <div class="legume persil" > </div>
+            <div class="legume piment-doux" > </div>
+            <div class="legume radis-noir" > </div>
+            <div class="legume scarole" > </div>
+            <div class="legume tomate" > </div>
+          </div>
+        </div>
+        <!-- Novembre 300-->
+        <div class="carousel-item" style="background-color:#330033">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume baby-boo" > </div>
+            <div class="legume betterave" > </div>
+            <div class="legume blette" > </div>
+            <div class="legume carotte" > </div>
+            <div class="legume chou-romanesco" > </div>
+            <div class="legume courge-jack-be-little" > </div>
+            <div class="legume courge-spaghetti" > </div>
+            <div class="legume echalion" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume mache" > </div>
+            <div class="legume mini-poivron" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume oignon" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume patisson" > </div>
+            <div class="legume potimarron" > </div>
+            <div class="legume radis-noir" > </div>
+            <div class="legume scarole" > </div>
+            <div class="legume tomate" > </div>
+          </div>
+        </div>
+        <!-- Décembre 270-->
+        <div class="carousel-item" style="background-color:#1a0033">
+          <div class="container d-flex flex-wrap justify-content-center">
+            <div class="legume blette" > </div>
+            <div class="legume carotte" > </div>
+            <div class="legume chou-rave" > </div>
+            <div class="legume echalion" > </div>
+            <div class="legume frisee" > </div>
+            <div class="legume navet-marteau" > </div>
+            <div class="legume pain-de-sucre" > </div>
+            <div class="legume patate" > </div>
+            <div class="legume patisson" > </div>
+          </div>
+        </div>
+      </div>
+
+
+      <a class="carousel-control-prev fixe" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next fixe" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+
+
+
+      <div class="d-inline-flex bd-highlight carousel-mois fixe" >
+        <div class="carousel-indicators" class="row mx-3 py-0">
+          <div data-target="#carouselExampleIndicators" data-slide-to="0" class="col-1 justify-content-center p-0 my-2 active">
+            <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+              Janv.</button>
+            </div>
+
+            <div data-target="#carouselExampleIndicators" data-slide-to="1" class="col-1 justify-content-center p-0 my-2">
+              <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                Févr.</button>
+              </div>
+
+              <div data-target="#carouselExampleIndicators" data-slide-to="2" class="col-1 justify-content-center p-0 my-2">
+                <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                  Mars</button>
+                </div>
+
+                <div data-target="#carouselExampleIndicators" data-slide-to="3" class="col-1 justify-content-center p-0 my-2">
+                  <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                    Avr.</button>
+                  </div>
+
+                  <div data-target="#carouselExampleIndicators" data-slide-to="4" class="col-1 justify-content-center p-0 my-2">
+                    <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                      Mai</button>
+                    </div>
+
+                    <div data-target="#carouselExampleIndicators" data-slide-to="5" class="col-1 justify-content-center p-0 my-2">
+                      <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                        Juin</button>
+                      </div>
+
+                      <div data-target="#carouselExampleIndicators" data-slide-to="6" class="col-1 justify-content-center p-0 my-2">
+                        <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                          Juil.</button>
+                        </div>
+
+                        <div data-target="#carouselExampleIndicators" data-slide-to="7" class="col-1 justify-content-center p-0 my-2">
+                          <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                            Août</button>
+                          </div>
+
+                          <div data-target="#carouselExampleIndicators" data-slide-to="8" class="col-1 justify-content-center p-0 my-2">
+                            <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                              Sept.</button>
+                            </div>
+
+                            <div data-target="#carouselExampleIndicators" data-slide-to="9" class="col-1 justify-content-center p-0 my-2">
+                              <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                                Oct.</button>
+                              </div>
+
+                              <div data-target="#carouselExampleIndicators" data-slide-to="10" class="col-1 justify-content-center p-0 my-2">
+                                <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                                  Nov.</button>
+                                </div>
+
+                                <div data-target="#carouselExampleIndicators" data-slide-to="11" class="col-1 justify-content-center p-0 my-2">
+                                  <button class="px-0 py-1 btn btn-block btn-outline-light text-troncate" type="button">
+                                    Déc.</button>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+
+                          <!--Footer-->
+                          <footer class="text-center" style="background-color: grey; color: white; font-size: 10pt">
+                          </br>
+                          <h6 style="margin-bottom: 16px">Site créé par:</h6>
+
+                          <div class="container justify-content-center" style=" width:50%">
+                            <div class="row justify-content-center">
+
+                              <div class="col-md-2">
+                                <p> Benjamin Burq</p>
+                              </div>
+
+                              <div class="col-md-2">
+                                <p> Marion Gentil</p>
+                              </div>
+
+                              <div class="col-md-2">
+                                <p> Mélanie Patte</p>
+                              </div>
+
+                              <div class="col-md-2">
+                                <p> Romain Robinet</p>
+                              </div>
+
+                              <div class="col-md-3">
+                                <p> Jean-Sébastien Zanetta</p>
+                              </div>
+
+                            </div>
+                          </div>
+                          <br>
+                          <h6 style="margin-bottom: 16px">Contactez-Nous:</h6>
+
+                          <a href="https://www.facebook.com/Blettes-Villette-1742655729194912/"><img src="0.1_Ressources/0.0_Charte Graphique/facebookwhite.svg" style="width: 2.8%; margin-right: 15px; margin-bottom: 20px"></a>
+                          <a href="mailto:blettesvillette@gmail.com"><img src="0.1_Ressources/0.0_Charte Graphique/envelopewhite.svg" style="width: 4%; margin-left: 15px; margin-bottom: 20px"></a>
+                        </footer>
+                        <!--Footer-->
+
+                      </body>
+
+                      </html>

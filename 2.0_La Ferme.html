@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Blette Villette CSS -->
+  <link rel="stylesheet" type="text/css" href="0.1_Ressources\0.0_Charte Graphique\Charte Graphique.css">
+
+  <!-- Titre Page Web -->
+  <title>La Ferme</title>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+  google.charts.load("current", {
+    "packages":["map"],
+    // Note: you will need to get a mapsApiKey for your project.
+    // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+    "mapsApiKey": "AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY"
+  });
+  google.charts.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Lat', 'Long', 'Name'],
+      [37.4232, -122.0853, 'Work'],
+      [37.4289, -122.1697, 'University'],
+      [37.6153, -122.3900, 'Airport'],
+      [37.4422, -122.1731, 'Shopping']
+    ]);
+
+    var map = new google.visualization.Map(document.getElementById('map_div'));
+    map.draw(data, {
+      showTooltip: true,
+      showInfoWindow: true
+    });
+  }
+
+  </script>
+</head>
+
+
+<body class="bg-dark">
+
+  <!--NAVBAR-->
+  <nav class="BV_Vert navbar navbar-expand-lg navbar-dark" style="font-size: 15pt">
+
+    <!--Logo clicable-->
+    <a class="navbar-brand" href="1.0_Accueil.html">
+      <img src="0.1_Ressources\0.0_Charte Graphique\Logo_BV_rect_trsp_long.png" width="80" height="40" class="d-inline-block align-top" alt="logo">
+    </a>
+
+    <!--Boutton Menu Responsive-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <!--Blettes Villettes-->
+        <li class="font-weight-bold nav-item active"><a class="nav-link txt_BV" style="font-family:Calibri ; font-size: 17pt" href="1.0_Accueil.html">Blettes Villette</a></li>
+
+        <!--Accueil-->
+        <li class="nav-item"><a class="nav-link" href="1.0_Accueil.html">Accueil</a></li>
+
+        <!--La Ferme-->
+        <li class="nav-item active"><a class="nav-link" href="2.0_La Ferme.html">La ferme</a></li>
+
+        <!--Menu Légumes-->
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="3.0_Légumes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Légumes</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="3.0_Légumes.html">Fiches légumes</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="3.1_Paniers.html">Panier de saison</a>
+            <a class="dropdown-item" href="3.2_Mois.html">Légumes du mois</a>
+          </div>
+        </li>
+
+        <!--Recettes-->
+        <li class="nav-item"><a class="nav-link" href="4.0_Recettes.html">Recettes</a></li>
+
+        <!--Menu Infos-->
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="5.0_Inscription.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Informations</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="5.0_Inscription.html">Inscription</a>
+            <a class="dropdown-item" href="5.1_Contacts.html">Contacts</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/NAVBAR-->
+
+  <font size="4" color="#cccccc">
+    <blockquote class="blockquote text-center">
+      <br>
+      <h1 class="mb-0">La Ferme de Marconville</h1>
+      <br>
+      <footer class="blockquote text-center"> Voici quelques informations sur la provenance de nos légumes ! </footer>
+      <br>
+      <br>
+    </blockquote>
+
+    <p></p>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <h3>Localisation</h3>
+          <p></p>
+          <p>514 route de Marconville 60650 Villers Saint Barthélémy</p>
+          <p></p>
+          <br>
+          <!--<a> <img src="0.1_Ressources\2.0_La Ferme\Images\Situation Ferme.png" class="img-fluid" alt="not found"> </a>-->
+          <div id="map_div" style="width: 100%; height: auto"></div>
+          <br>
+          <br>
+          <br>
+          <h3>Certifications</h3>
+          <p></p>
+          <p></p>
+          <li>Certification Agriculture Biologique</li>
+          <p></p>
+          <a href="0.1_Ressources\2.0_La Ferme\Certification2018.pdf" class="btn BV_Vert">Télécharger Certification</a>
+          <p></p>
+          <p></p>
+          <li>Agrément Terroirs de Picardie - Bio</li>
+          <p></p>
+          <a href="0.1_Ressources\2.0_La Ferme\Agrément.pdf" class="btn BV_Vert">Télécharger Agrément</a>
+          <p></p>
+          <br>
+          <br>
+
+          <br>
+        </div>
+
+        <div class="col-lg-8 col-12">
+
+
+          <h3>Un peu d'histoire...</h3>
+          <br>
+          <p>Delphine et Loïc sont maraichers et propriétaires de la Ferme de Marconville située au Nord de Paris, tout près de Beauvais.
+            Loïc s'est installé à la ferme il y a une dizaine d'année après un parcours professionnel totalement hors du monde agricole (il était prof de maths !).
+            Tout de suite, il s'attaque à reconvertir ses terres afin de s'orienter vers le maraichage biologique.
+            Il choisit aussi un mode de commercialisation en vente directe via le principe de l'AMAP afin de favoriser les circuits courts.
+            Depuis, la ferme s'est beaucoup développée et vend aujourd'hui environ 500 paniers et 100 douzaines d'oeufs par semaine !
+            Pour mener toutes ses livraisons à bien, Delphine et Loïc sont épaulés par une dizaine d'employés et apprentis.
+          </p>
+          <br>
+          <a> <img src="0.1_Ressources\2.0_La Ferme\Images\Ferme.png" class="img-fluid" alt="image non trouvée"> </a>
+          <br>
+          <br>
+          <h3>Les visites à la Ferme</h3>
+          <br>
+          <p> Les Amapiens sont invités plusieurs fois dans l'année à venir passer des journées à la ferme. C'est l'occasion pour eux d'en apprendre plus sur le fonctionnement de la ferme mais aussi de mettre la main à la pâte !
+            En effet, nos agriculteurs nous réservent à chaque fois bien des surprises : arrachage de pied de tomate, ramassage de salades ou de carottes, il y en a pour tous les goûts !
+            La ferme réunissant plusieurs Amap (Amap du Marais, Fanes Légumes...), ces visites sont aussi le lieu de rencontres et d'échanges autour d'un grand banquet !</p>
+            <br>
+            <h5> Retour en images sur nos précédentes visites : </h5>
+            <br>
+            <a  class="btn BV_Vert" href="2.1_Visite_18_11_11.html">Visite du 11/11/18</button></a>
+            <br>
+            <br>
+            <p></p>
+            <h3>Se rendre à la Ferme</h3>
+            <br>
+            <p> Si vous prenez la voiture, voici 2 routes possibles pour venir à la ferme (d'autres sont possibles, notamment par l'A16)  :
+              <br>
+              <p>- Première possibilité (depuis l'est ou le nord de Paris) : prendre Porte de la Villette puis toujours tout droit : direction Le Bourget puis direction Senlis/Cergy Pontoise. Au deuxième rond point, prendre à gauche la direction Cergy Pontoise (et quitter la direction Senlis) et aller jusqu'à la croix verte. Au rond point de la croix verte, prendre la direction Beauvais. Puis continuer jusqu'au panneau 'Beauvais par RD" (ne pas prendre l'A16 direction Beauvais). Puis toujours tout droit passer par Sainte Geneviève, Noailles, Royes et Warluis. Après Warluis, au rond point prendre à gauche direction Rouen (ne pas suivre Beauvais). Prendre cette voie express jusqu'au bout. A la fin de la voie express, on aboutit à un gros rond point, tourner première à droite direction parc de Saint Paul, passer devant le parc d’attraction de Saint-Paul et prendre la première petite route (route de Marconville) sur votre droite, encore un km et vous verrez des serres, vous êtes arrivés.</p>
+              <br>
+              <p>- Deuxième possibilité (depuis le nord de Paris) : Prendre l'A15 direction Cergy-Pontoise (et non l'A16 direction Beauvais, chemin plus long et payant)
+                sur l'A15 prendre la sortie n°10 (attention ne la ratez pas, elle arrive vite !) et suivre d’abord la direction MARINES jusqu'au gros rond point qui indique la direction ENNERY, suivre ENNERY jusqu'à ce que la direction de MERU soit indiquée puis suivre MERU et toujours tout droit :
+                passer par Méru (toujours tout droit avant et dans Méru, rester sur la D927, ne pas suivre Beauvais), puis passer par Ressons l'Abbaye, Auteuil (attention ne pas prendre la direction BEAUVAIS) puis passer par Auneuil, Villers Saint Barthélémy, sortir de Villers St B. jusqu'au virage très serré avec une croix blanche et tourner à droite direction Marconville (panneau caché dans les arbres) : encore 1 km et vous êtes arrivés!</p>
+                <br>
+                <p>Si vous êtes perdus ou arrivés jusqu'à Beauvais, prendre la direction de Rouen et du parc d'attraction de Saint Paul (la (petite !) route de marconville est juste en face du parking du parc d'attraction sur votre gauche en venant de beauvais, ou sur votre droite en venant de la voie express de contournement de beauvais)</p>
+                <br>
+                <p>Si vous venez par le train : départ Gare du nord , terminus à Beauvais (d'habitude 9h01, arrivée à Beauvais 10h18). Attention pour ceux qui n'ont jamais pris ce train, la voie est très souvent annoncée au dernier moment. C'est généralement la voie 19, parfois la voie 21 cachée beaucoup plus loin! </p>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <!--Footer-->
+          <footer class="text-center" style="background-color: grey; color: white; font-size: 10pt">
+          </br>
+          <h6 style="margin-bottom: 16px">Site créé par:</h6>
+
+          <div class="container justify-content-center" style=" width:50%">
+            <div class="row justify-content-center">
+
+              <div class="col-md-2">
+                <p> Benjamin Burq</p>
+              </div>
+
+              <div class="col-md-2">
+                <p> Marion Gentil</p>
+              </div>
+
+              <div class="col-md-2">
+                <p> Mélanie Patte</p>
+              </div>
+
+              <div class="col-md-2">
+                <p> Romain Robinet</p>
+              </div>
+
+              <div class="col-md-3">
+                <p> Jean-Sébastien Zanetta</p>
+              </div>
+
+            </div>
+          </div>
+          <br>
+          <h6 style="margin-bottom: 16px">Contactez-Nous:</h6>
+
+          <a href="https://www.facebook.com/Blettes-Villette-1742655729194912/"><img src="0.1_Ressources/0.0_Charte Graphique/facebookwhite.svg" style="width: 2.8%; margin-right: 15px; margin-bottom: 20px"></a>
+          <a href="mailto:blettesvillette@gmail.com"><img src="0.1_Ressources/0.0_Charte Graphique/envelopewhite.svg" style="width: 4%; margin-left: 15px; margin-bottom: 20px"></a>
+        </footer>
+        <!--Footer-->
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </body>
+
+      </html>

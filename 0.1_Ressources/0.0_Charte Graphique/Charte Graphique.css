@@ -1,0 +1,32 @@
+/*<!--BACKGROUND & TEXT COLOR!-->*/
+
+
+  .BV_Vert {
+    background-color: #aabe46 ;
+    color : #f8f9f0 ;
+  }
+
+  .BV_Blanc {
+    background-color: #f8f9f0 ;
+    color : #aabe46 ;
+  }
+
+
+  .BV_Norm {
+    background-color: dark ;
+    color : #f8f9f0 ;
+  }
+
+.txt_BV{
+  font : calibri ;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .gallerie {
+      display:inline-block; width:100%; height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  }

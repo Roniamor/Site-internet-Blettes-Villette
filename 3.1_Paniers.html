@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Blette Villette CSS -->
+  <link rel="stylesheet" type="text/css" href="0.1_Ressources\0.0_Charte Graphique\Charte Graphique.css">
+
+  <!-- Paniers CSS -->
+  <link rel="stylesheet" type="text/css" href="0.1_Ressources\0.0_Charte Graphique\Paniers.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="0.1_Ressources\0.0_Charte Graphique\Paniers.js"></script>
+
+  <!-- Titre Page Web -->
+  <title>Légumes</title>
+</head>
+
+<body class="bg-dark">
+
+  <!--NAVBAR-->
+  <nav class="BV_Vert navbar navbar-expand-lg navbar-dark" style="font-size: 15pt">
+
+    <!--Logo clicable-->
+    <a class="navbar-brand" href="1.0_Accueil.html">
+      <img src="0.1_Ressources\0.0_Charte Graphique\Logo_BV_rect_trsp_long.png" width="80" height="40" class="d-inline-block align-top" alt="logo">
+    </a>
+
+    <!--Boutton Menu Responsive-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+        <!--Blettes Villettes-->
+        <li class="font-weight-bold nav-item active"><a class="nav-link txt_BV" style="font-family:Calibri ; font-size: 17pt" href="1.0_Accueil.html">Blettes Villette</a></li>
+
+        <!--Accueil-->
+        <li class="nav-item"><a class="nav-link" href="1.0_Accueil.html">Accueil</a></li>
+
+        <!--La Ferme-->
+        <li class="nav-item"><a class="nav-link" href="2.0_La Ferme.html">La ferme</a></li>
+
+        <!--Menu Légumes-->
+        <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="3.0_Légumes.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Légumes</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="3.0_Légumes.html">Fiches légumes</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item font-weight-bold" href="3.1_Paniers.html">Panier de saison</a>
+            <a class="dropdown-item" href="3.2_Mois.html">Légumes du mois</a>
+          </div>
+        </li>
+
+        <!--Recettes-->
+        <li class="nav-item"><a class="nav-link" href="4.0_Recettes.html">Recettes</a></li>
+
+        <!--Menu Infos-->
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="5.0_Inscription.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Informations</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="5.0_Inscription.html">Inscription</a>
+            <a class="dropdown-item" href="5.1_Contacts.html">Contacts</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!--/NAVBAR-->
+
+  <font size="4" color="#cccccc">
+
+    <div style="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"  data-interval="false">
+
+        <!-- Background-color, w3school > color pidcker > lighter/darker:10% > Hue de 30 en 30 -->
+        <div class="carousel-inner" >
+          <!-- Hiver 240-->
+          <div class="carousel-item active" style="background:url('0.1_Ressources/3.1_Paniers/Images/Hiver.gif') left bottom no-repeat fixed;background-size: cover;max-width:100%;height:auto">
+            <div class="container d-flex flex-wrap justify-content-center" style="margin-left,margin-right: 10%;">
+
+              <div class="m legume blette"> </div>
+              <div class="m legume butternut"> </div>
+              <div class="m legume carotte"> </div>
+              <!-- <div class="m legume chou-vert"> </div>  -->
+
+              <div class="m legume epinard"> </div>
+              <div class="m legume frisee"> </div>
+              <div class="m legume mache"> </div>
+
+              <div class="m legume navet-marteau"> </div>
+              <div class="m legume oignon"> </div>
+              <div class="m legume patate"> </div>
+
+              <div class="m legume pomme"> </div>
+              <div class="m legume potimarron"> </div>
+              <div class="m legume radis-noir"> </div>
+
+
+            </div>
+
+          </div>
+          <!-- Printemps 210-->
+          <div class="carousel-item" style="background:url('0.1_Ressources/3.1_Paniers/Images/Printemps.gif') right bottom no-repeat fixed;background-size: cover;max-width:100%;height:auto">
+            <div class="container d-flex flex-wrap justify-content-center">
+
+              <!-- <div class="m legume abricot"> </div> -->
+              <div class="m legume aubergine"> </div>
+              <div class="m legume basilic"> </div>
+              <div class="m legume blette"> </div>
+              <div class="m legume concombre"> </div>
+              <div class="m legume epinard"> </div>
+              <div class="m legume fenouil"> </div>
+
+              <div class="m legume fraise"> </div>
+              <div class="m legume navet-marteau"> </div>
+              <div class="m legume oignon"> </div>
+              <div class="m legume patate"> </div>
+
+              <div class="m legume peche"> </div>
+              <div class="m legume persil"> </div>
+              <div class="m legume poivron"> </div>
+              <!-- <div class="m legume pomme"> </div> -->
+              <div class="m legume radis-noir"> </div>
+              <div class="m legume tomate"> </div>
+
+            </div>
+
+          </div>
+          <!-- Eté 180-->
+          <div class="carousel-item" style="background:url('0.1_Ressources/3.1_Paniers/Images/Ete.gif') right top no-repeat fixed;background-size: cover;max-width:100%;height:auto">
+            <div class="container d-flex flex-wrap justify-content-center ">
+              <div class="m legume abricot"> </div>
+              <div class="m legume aubergine"> </div>
+              <div class="m legume basilic"> </div>
+              <div class="m legume blette"> </div>
+              <div class="m legume concombre"> </div>
+              <div class="m legume fenouil"> </div>
+              <div class="m legume fraise"> </div>
+              <div class="m legume frisee"> </div>
+              <div class="m legume oignon"> </div>
+              <div class="m legume patate"> </div>
+              <div class="m legume peche"> </div>
+              <div class="m legume persil"> </div>
+              <div class="m legume piment-doux"> </div>
+              <div class="m legume poivron"> </div>
+              <div class="m legume tomate"> </div>
+
+            </div>
+          </div>
+
+          <!-- Automne 150-->
+          <div class="carousel-item" style="background:url('0.1_Ressources/3.1_Paniers/Images/Automne.gif') left top no-repeat fixed;background-size: cover;max-width:100%;height:auto">
+            <div class="container d-flex flex-wrap justify-content-center " >
+              <!-- <div class="m legume aubergine" > </div> -->
+              <!-- <div class="m legume baby-boo" > </div>  -->
+              <div class="m legume basilic" > </div>
+              <div class="m legume betterave" > </div>
+              <div class="m legume blette" > </div>
+              <!-- <div class="m legume butternut" > </div> -->
+              <div class="m legume carotte" > </div>
+              <div class="m legume chou-rave" > </div>
+              <!-- <div class="m legume chou-romanesco" > </div>  -->
+              <div class="m legume concombre" > </div>
+              <!-- <div class="m legume courge-jack" > </div> -->
+              <!-- <div class="m legume courge-spaghetti" > </div> -->
+              <div class="m legume echalion" > </div>
+              <div class="m legume frisee" > </div>
+              <!-- <div class="m legume mache" > </div> -->
+              <!-- <div class="m legume mini-poivron" > </div>  -->
+              <div class="m legume navet-marteau" > </div>
+              <div class="m legume oignon" > </div>
+              <div class="m legume pain-de-sucre" > </div>
+              <!-- <div class="m legume patate" > </div> -->
+              <div class="m legume patisson" > </div>
+              <div class="m legume potimarron" > </div>
+              <!-- <div class="m legume persil" > </div> -->
+              <!-- <div class="m legume piment-doux" > </div> -->
+              <div class="m legume poivron" > </div>
+              <div class="m legume radis-noir" > </div>
+              <!-- <div class="m legume scarole" > </div> -->
+              <!-- <div class="m legume tomate" > </div>  -->
+
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev fixe" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next fixe" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+
+        <div class="d-inline-flex bd-highlight carousel-mois fixe" >
+          <div class="carousel-indicators" class="row mx-3 py-0">
+            <div data-target="#carouselExampleIndicators" data-slide-to="0" class="col-3 col-md-2 justify-content-center p-0 m-2 active">
+              <button class="py-1 btn btn-block btn-outline-light resize" type="button">
+                Hiver</button>
+              </div>
+              <div data-target="#carouselExampleIndicators" data-slide-to="1" class="col-3 col-md-2 justify-content-center p-0 m-2">
+                <button class="py-1 btn btn-block btn-outline-light resize" type="button">
+                  Printemps</button>
+                </div>
+                <div data-target="#carouselExampleIndicators" data-slide-to="2" class="col-3 col-md-2 justify-content-center p-0 m-2">
+                  <button class="py-1 btn btn-block btn-outline-light resize" type="button">
+                    Eté</button>
+                  </div>
+
+                  <div data-target="#carouselExampleIndicators" data-slide-to="3" class="col-3 col-md-2 justify-content-center p-0 m-2">
+                    <button class="py-1 btn btn-block btn-outline-light resize" type="button">
+                      Automne</button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </font>
+
+
+          <!--Footer-->
+          <footer class="text-center" style="background-color: grey; color: white; font-size: 10pt">
+          </br>
+          <h6 style="margin-bottom: 16px">Site créé par:</h6>
+
+          <div class="container justify-content-center" style=" width:50%">
+            <div class="row justify-content-center">
+
+              <div class="col-md-2">
+                <p> Benjamin Burq</p>
+              </div>
+
+              <div class="col-md-2">
+                <p> Marion Gentil</p>
+              </div>
+
+              <div class="col-md-2">
+                <p> Mélanie Patte</p>
+              </div>
+
+              <div class="col-md-2">
+                <p> Romain Robinet</p>
+              </div>
+
+              <div class="col-md-3">
+                <p> Jean-Sébastien Zanetta</p>
+              </div>
+
+            </div>
+          </div>
+          <br>
+          <h6 style="margin-bottom: 16px">Contactez-Nous:</h6>
+
+          <a href="https://www.facebook.com/Blettes-Villette-1742655729194912/"><img src="0.1_Ressources/0.0_Charte Graphique/facebookwhite.svg" style="width: 2.8%; margin-right: 15px; margin-bottom: 20px"></a>
+          <a href="mailto:blettesvillette@gmail.com"><img src="0.1_Ressources/0.0_Charte Graphique/envelopewhite.svg" style="width: 4%; margin-left: 15px; margin-bottom: 20px"></a>
+        </footer>
+        <!--Footer-->
+
+      </body>
+
+      </html>
